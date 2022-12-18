@@ -1,9 +1,12 @@
-import './App.css';
-function App(props) { return (
-<div className="App">
-<header className="App-header">
-React Message app:
-<h3>{props.message}</h3> </header>
-</div> );
+import React from 'react';
+import Messages from './Messages';
+
+function App() {
+  return (
+    <div className="App">
+      <Messages prompt="This is the prompt text." />
+    </div>
+  );
 }
+
 export default App;
